@@ -6,7 +6,7 @@ function Header() {
             <div className="inner">
                 <Link to="/" className="logo">Capa </Link>
                 <nav id="nav">
-                    <Link to="/">Home</Link>
+                    <Link to="/">Home</Link>                    
                     <Link to="/produtos">Produtos</Link>
                 </nav>
                 <a href="#navPanel" className="navPanelToggle"><span className="fa fa-bars"></span></a>
@@ -15,3 +15,5 @@ function Header() {
     )
 }
 export default Header;
+
+
