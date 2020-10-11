@@ -5,35 +5,28 @@ export default function Footer() {
         <footer class="footer_area p_120">
             <div class="container">
                 <div class="row footer_inner">
-                    <div class="col-lg-5 col-sm-6">
+                    <div class="col-lg-6 col-sm-6">
                         <aside class="f_widget ab_widget">
                             <div class="f_title">
-                                <h3>About Me</h3>
+                                <h3>Sobre Nós</h3>
                             </div>
-                            <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
-                            <p>
-                                Copyright &copy;
+                            <p>Você quer saber mais sobre a Saga StarWars? Não fique de fora da nossa comunidade e seja nosso Fã-Clube StarWars Pelo Mundo</p>
+                            <p>Copyright &copy; Todos os direitos reservador | Esse template tem base no Woodrox e foi modificado <i class="fa fa-heart-o" aria-hidden="true"></i>por <a href="https://DevOscarFelipe.com" target="_blank">Oscar e Felipe</a>
                             </p>
                         </aside>
                     </div>
-                    <div class="col-lg-5 col-sm-6">
-                        <aside class="f_widget news_widget">
-                            <div class="f_title">
-                                <h3>Newsletter</h3>
-                            </div>
-                            <p>Stay updated with our latest trends</p>
-                            <div id="mc_embed_signup">
-
-                            </div>
-                        </aside>
-                    </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-6">
                         <aside class="f_widget social_widget">
                             <div class="f_title">
-                                <h3>Follow Me</h3>
+                                <h3>Redes</h3>
                             </div>
-                            <p>Let us be social</p>
-                            
+                            <p>Siga-nos nas redes sociais e nos acompanhe nos eventos nacionais e internacionais</p>
+                            <ul class="list">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                            </ul>
                         </aside>
                     </div>
                 </div>
