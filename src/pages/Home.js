@@ -1,42 +1,55 @@
 import React from 'react'
 import Banner from '../components/Banner'
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 export default function Home() {
 
+    
     return (
         <>
             <Banner titulo="Seja Bem-Vindo" mensagem="Aula de React" />
-            <section id="three" className="wrapper special">
-                <div className="inner">
-                    <header className="align-center">
-                        <h2>Página Home</h2>
-                        <p>Visualize nossas aplicações </p>
-                    </header>
-                    <div className="flex flex-2">
-                        <article>
-                            <div className="image fit">
-                                <img src={require('../images/pic01.jpg')} alt="Pic 01" />
+            <section class="feature_area p_120">
+                <div class="container">
+                    <div class="main_title">
+                        <h2>Some Features that Made us Unique</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    </div>
+                    <div class="row feature_inner">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="feature_item">
+                                <h4><i class="lnr lnr-user"></i>Expert Technicians</h4>
+                                <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
                             </div>
-                            <header>
-                                <h3>Praesent placerat magna</h3>
-                            </header>
-                            <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor lorem ipsum.</p>
-                            <footer>
-                                <Link to="/" className="button special">More</Link>
-                            </footer>
-                        </article>
-                        <article>
-                            <div className="image fit">
-                                <img src={require('../images/pic02.jpg')} alt="Pic 02" />
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="feature_item">
+                                <h4><i class="lnr lnr-license"></i>Professional Service</h4>
+                                <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
                             </div>
-                            <header>
-                                <h3>Fusce pellentesque tempus</h3>
-                            </header>
-                            <p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna non comodo sodales tempus.</p>
-                            <footer>
-                                <Link to="/" className="button special">More</Link>
-                            </footer>
-                        </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="feature_item">
+                                <h4><i class="lnr lnr-phone"></i>Great Support</h4>
+                                <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="feature_item">
+                                <h4><i class="lnr lnr-rocket"></i>Technical Skills</h4>
+                                <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="feature_item">
+                                <h4><i class="lnr lnr-diamond"></i>Highly Recomended</h4>
+                                <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="feature_item">
+                                <h4><i class="lnr lnr-bubble"></i>Positive Reviews</h4>
+                                <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

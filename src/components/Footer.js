@@ -2,23 +2,40 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <footer id="footer">
-            <div className="inner">
-                <div className="flex">
-                    <div className="copyright">
-                        &copy; Desenvolvido na aula de Tópicos Especiais em Programação.
+        <footer class="footer_area p_120">
+            <div class="container">
+                <div class="row footer_inner">
+                    <div class="col-lg-5 col-sm-6">
+                        <aside class="f_widget ab_widget">
+                            <div class="f_title">
+                                <h3>About Me</h3>
+                            </div>
+                            <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
+                            <p>
+                                Copyright &copy;
+                            </p>
+                        </aside>
                     </div>
-                    <ul className="icons">
-                        {
-                            /*
-                        <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-                        <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-                        <li><a href="#" className="icon fa-linkedin"><span className="label">linkedIn</span></a></li>
-                        <li><a href="#" className="icon fa-pinterest-p"><span className="label">Pinterest</span></a></li>
-                        <li><a href="#" className="icon fa-vimeo"><span className="label">Vimeo</span></a></li>
-                        */
-                        }
-                    </ul>
+                    <div class="col-lg-5 col-sm-6">
+                        <aside class="f_widget news_widget">
+                            <div class="f_title">
+                                <h3>Newsletter</h3>
+                            </div>
+                            <p>Stay updated with our latest trends</p>
+                            <div id="mc_embed_signup">
+
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-lg-2">
+                        <aside class="f_widget social_widget">
+                            <div class="f_title">
+                                <h3>Follow Me</h3>
+                            </div>
+                            <p>Let us be social</p>
+                            
+                        </aside>
+                    </div>
                 </div>
             </div>
         </footer>
