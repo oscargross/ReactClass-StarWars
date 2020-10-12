@@ -4,7 +4,7 @@ import '../assets/css/style.css'
 import '../components/Banner'
 import Banner from '../components/Banner'
 
-export default function Home() {
+export default function Films() {
 
 
     return (
@@ -14,7 +14,7 @@ export default function Home() {
                             <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
                             <div class="container">
                                 <div class="blog_b_text text-center">
-                                    <Banner titulo={"Página Inicial - HOME" } mensagem="Luke, você descobrirá que muitas das verdades às quais nos prendemos dependem do nosso ponto de vista."/>
+                                    <Banner titulo={"Filmes" } mensagem="Luke, você descobrirá que muitas das verdades às quais nos prendemos dependem do nosso ponto de vista."/>
                                     <a class="white_bg_btn" href="#">Veja Mais</a>
                                 </div>
                             </div>
