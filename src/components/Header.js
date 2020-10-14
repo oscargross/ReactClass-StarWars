@@ -5,35 +5,35 @@ import '../assets/css/style.css'
 function Header() {
     return (
         <>
-            <header class="header_area">
-                <div class="top_menu">
-                    <div class="container">
-                        <div class="top_inner">
-                            <div class="float-left">
-                                <a href="#">Eventos</a>
-                                <a href="#">Suporte</a>
+            <header className="header_area">
+                <div className="top_menu">
+                    <div className="container">
+                        <div className="top_inner">
+                            <div className="float-left">
+                                <Link to="./" className="nav-link">Eventos</Link>
+                                <Link to="./" className="nav-link">Suporte</Link>
                             </div>                          
                         </div>
                     </div>
                 </div>
-                <div class="main_menu" id="mainNav">
-                    <nav class="navbar navbar-expand-lg navbar-light" >
-                        <div class="container">
-                            <a class="navbar-brand logo_h" href="index.html"><img src={require("../images/logo.png")} alt=""/></a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
+                <div className="main_menu" id="mainNav">
+                    <nav className="navbar navbar-expand-lg navbar-light" >
+                        <div className="container">
+                            <p className="navbar-brand logo_h"><img src={require("../images/logo.png")} alt=""/></p>
+                                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span className="icon-bar"></span>
+                                    <span className="icon-bar"></span>
+                                    <span className="icon-bar"></span>
                                 </button>
-                                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                                    <ul class="nav navbar-nav menu_nav ml-auto">
-                                        <li class="nav-item active"><a class="nav-link"><Link to="./">Home</Link></a></li>
-                                        <li class="nav-item"><a class="nav-link"><Link to="./Films">Films</Link></a></li>
-                                        <li class="nav-item"><a class="nav-link"><Link to="./StarShips">StarShips</Link></a></li>
-                                        <li class="nav-item"><a class="nav-link"><Link to="./People">People</Link></a></li>
-                                        <li class="nav-item"><a class="nav-link"><Link to="./Planets">Planets</Link></a></li>
-                                        <li class="nav-item"><a class="nav-link"><Link to="./Species">Species</Link></a></li>
-                                        <li class="nav-item"><a class="nav-link"><Link to="./Login">Login</Link></a></li>
+                                <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
+                                    <ul className="nav navbar-nav menu_nav ml-auto">
+                                        <li className="nav-item active"><Link to="./" className="nav-link">Home</Link></li>
+                                        <li className="nav-item"><Link to="./Films" className="nav-link">Films</Link></li>
+                                        <li className="nav-item"><Link to="./StarShips" className="nav-link">StarShips</Link></li>
+                                        <li className="nav-item"><Link to="./People" className="nav-link">People</Link></li>
+                                        <li className="nav-item"><Link to="./Planets" className="nav-link">Planets</Link></li>
+                                        <li className="nav-item"><Link to="./Species" className="nav-link">Species</Link></li>
+                                        <li className="nav-item"><Link to="./Login" className="nav-link">Login</Link></li>
                                     </ul>
                                 </div> 
 					</div>
@@ -45,4 +45,3 @@ function Header() {
     )
 }
 export default Header;
-
