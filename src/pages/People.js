@@ -1,32 +1,20 @@
-import React, { useLayoutEffect, useState } from 'react'
-//import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
 import '../assets/css/style.css'
 import '../components/Banner'
 import Banner from '../components/Banner'
 const axios = require('axios');
 
-
-
 export default function People() {
 
-    const [people, setPeople] = useState([])
-
-    const getPeople = () => {
+    const [people, setPeople] = useState([])     
+    
+    useEffect( () => {
         axios.get('https://swapi.dev/api/people/')
             .then((response) => {
-                console.log(response.data);
                 setPeople(response.data.results)
-
             })
-            .catch((err) => {
-                console.log(err)
-            })
-    }
-    useLayoutEffect(() => {
-        getPeople()
-    }, [])
-
-
+    } ,[])  
+  
     return (
         <>
             <section className="home_banner_area blog_banner">
@@ -53,14 +41,12 @@ export default function People() {
                                     <p className="center">Peso: {item.mass}</p>
                                     <p className="center">Gênero: {item.gender}</p>
                                     <p className="center">Cor do Cabelo: {item.hair_color}</p>
-
                                 </div>
                             </div>
                         )}
                     </div>
                 </div>
             </section>
-
         </>
     )
 }
