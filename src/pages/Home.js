@@ -9,16 +9,8 @@ export default function Home() {
 
     return (
         <>
-         <section className="home_banner_area blog_banner">
-                        <div className="banner_inner d-flex align-items-center">
-                            <div className="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
-                            <div className="container">
-                                <div className="blog_b_text text-center">
-                                    <Banner titulo={"Página Inicial - HOME" } mensagem="Luke, você descobrirá que muitas das verdades às quais nos prendemos dependem do nosso ponto de vista."/>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+        <Banner titulo={"Página Inicial - HOME" } mensagem="Luke, você descobrirá que muitas das verdades às quais nos prendemos dependem do nosso ponto de vista"/>
+                         
             <section className="furniture_area p_120">
                 <div className="container">
                     <div className="main_title">

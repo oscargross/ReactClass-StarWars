@@ -6,27 +6,18 @@ const axios = require('axios');
 
 export default function Planets() {
 
-    const [planet, setPlanet] = useState([])     
-    
-    useEffect( () => {
+    const [planet, setPlanet] = useState([])
+
+    useEffect(() => {
         axios.get('https://swapi.dev/api/planets/')
             .then((response) => {
                 setPlanet(response.data.results)
             })
-    } ,[])  
-  
+    }, [])
+
     return (
         <>
-            <section className="home_banner_area blog_banner">
-                <div className="banner_inner d-flex align-items-center">
-                    <div className="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
-                    <div className="container">
-                        <div className="blog_b_text text-center">
-                            <Banner titulo={"Naves"} mensagem="Ajude-me, Obi-Wan Kenobi. Você é minha única esperança."/>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Banner titulo={"Naves"} mensagem="Ajude-me, Obi-Wan Kenobi. Você é minha única esperança" />
             <section className="furniture_area p_120">
                 <div className="container">
                     <div className="main_title">
