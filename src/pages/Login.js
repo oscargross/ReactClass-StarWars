@@ -9,16 +9,8 @@ export default function Login() {
 
     return (
         <>
-         <section className="home_banner_area blog_banner">
-                        <div className="banner_inner d-flex align-items-center">
-                            <div className="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
-                            <div className="container">
-                                <div className="blog_b_text text-center">
-                                    <Banner titulo={"Login" } mensagem="Eu sou seu Pai!"/>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+        <Banner titulo={"Login" } mensagem="Eu sou seu Pai!"/>
+                            
             <section className="furniture_area p_120">
                 <div className="container">
                     <div className="main_title">

@@ -5,7 +5,7 @@ import './assets/css/style.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { HashRouter, Switch, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import People from './pages/People';
 import Films from './pages/Films';
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Header />
         <Switch>
           <Route path="/" exact={true} component={Home} />
@@ -29,7 +29,7 @@ function App() {
           <Route path="/species" component={Species} />
           <Route path="/starships" component={Starships} />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
       <Footer />
     </>
   );
