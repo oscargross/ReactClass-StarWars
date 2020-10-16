@@ -27,7 +27,7 @@ export default function Login() {
                         </div>
                         <div className="col-lg-6">
                             <div className="furniture_item">
-                                <img className="img-fluid" src={require("../images/felipe.jpg")} alt="" />
+                                <img className="img-fluid" src={require("../images/felps.jpeg")} alt="" />
                                 <h4 className="center">Felipe Daniel</h4>
                                 <p className="center">1118095<br/>1118095@imed.edu.br</p>
                             </div>

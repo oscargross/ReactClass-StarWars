@@ -64,6 +64,7 @@ button:focus {
 
 /* Main Title Area css
 ============================================================================================ */
+
 .main_title {
   text-align: center;
   margin-bottom: 75px; }
@@ -92,6 +93,23 @@ button:focus {
 ============================================================================================ */
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+.title-home {
+  margin: 10px 0;
+}
+.btn-insta {
+  background: #007bff;
+  color: #eee;
+  border: 1px solid black;
+  outline: none;
+  cursor: pointer;
+  width: 200px;
+  border-radius: 3px;
+  transition: 1s;
+}
+.btn-insta:hover {
+  background: blue;
+  transition: 1s;
+}
 .header_area {
   position: absolute;
   width: 100%;
@@ -114,6 +132,9 @@ button:focus {
         color: #fff;
         padding: 0px;
         display: inline-block; }
+        .nav--hover:hover {
+          color: #007bff !important;
+        }
         .header_area .navbar .nav .nav-item .nav-link:after {
           display: none; }
       .header_area .navbar .nav .nav-item.submenu {
@@ -249,10 +270,31 @@ button:focus {
   .header_socila li:hover a {
     color: #faba00; }
 
+
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* FOOTER
+============================================================================================ */
+.footer_area {
+  background: rgb(0 8 37);
+}
+.f_title {
+  color: #fff;
+}
+
+
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /* Home Banner Area css
 ============================================================================================ */
+.img-felps {
+  width: 98%;
+  height: 100%;
+}
+
+.link-imed--color {
+  color: #007bff;
+}
 .home_banner_area {
   z-index: 1;
   background: url(../../images/banner-2.jpg) no-repeat scroll center center;
