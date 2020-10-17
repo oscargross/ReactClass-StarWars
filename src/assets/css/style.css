@@ -93,23 +93,8 @@ button:focus {
 ============================================================================================ */
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
-.title-home {
-  margin: 10px 0;
-}
-.btn-insta {
-  background: #007bff;
-  color: #eee;
-  border: 1px solid black;
-  outline: none;
-  cursor: pointer;
-  width: 200px;
-  border-radius: 3px;
-  transition: 1s;
-}
-.btn-insta:hover {
-  background: blue;
-  transition: 1s;
-}
+
+
 .header_area {
   position: absolute;
   width: 100%;
@@ -287,10 +272,7 @@ button:focus {
 /*----------------------------------------------------*/
 /* Home Banner Area css
 ============================================================================================ */
-.img-felps {
-  width: 98%;
-  height: 100%;
-}
+
 
 .link-imed--color {
   color: #007bff;
@@ -1100,3 +1082,55 @@ button:focus {
 /*============ End Blog Single Styles  =============*/
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+
+
+
+/* ========================================CSS REACT MARCÃO ======================================= */
+.title-home {
+  margin: 10px 0;
+}
+.btn-insta {
+  background: #007bff;
+  color: #eee;
+  border: 1px solid black;
+  outline: none;
+  cursor: pointer;
+  width: 200px;
+  border-radius: 3px;
+  transition: 1s;
+}
+.btn-insta:hover {
+  background: blue;
+  transition: 1s;
+}
+.img-felps {
+  width: 98%;
+  height: 100%;
+}
+.img-home {
+  width: 100%;
+}
+.icon {
+  cursor: pointer;
+  margin: 0 10px;
+  color: black;
+  transition: 175ms;
+}
+.icon:hover {
+  color: #007bff;
+  transition: 175ms;
+}
+.img-films {
+  width: 100%;
+  height: 50%;
+}
+.img-films2 {
+  width: 100%;
+  height: 50%;
+}
+.card-filmes-margin {
+  margin-top: 20px;
+}
+.card-starships--margin {
+  margin: 15px 50px;
+}

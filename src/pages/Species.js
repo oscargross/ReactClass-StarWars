@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../assets/css/style.css'
 import '../components/Banner'
 import Banner from '../components/Banner'
+import {Button, Card, CardDeck } from 'react-bootstrap';
 const axios = require('axios');
 
 export default function Species() {
@@ -25,15 +26,15 @@ export default function Species() {
                     </div>
                     <div className="furniture_inner row">
                         {species.map((item, key) =>
-                            <div className="col-lg-4" key={key} style={{ borderColor: "GrayText", borderStyle: "solid" }}>
-                                <div className="furniture_item" >
-                                    <h4 className="center">{item.name}</h4>
-                                    <p className="center">Classificação: {item.classification}</p>
-                                    <p className="center">Designação: {item.designation}</p>
-                                    <p className="center">Idioma: {item.language}</p>
-                                    <p className="center">Altura Média: {item.average_height}</p>
-                                </div>
-                            </div>
+                            <Card className="card-starships--margin" style={{ width: '18rem' }}>
+                                <Card.Body>
+                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Text>
+                                        Some quick example text to build on the card title and make up the bulk of
+                                        the card's content.
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
                         )}
                     </div>
                 </div>

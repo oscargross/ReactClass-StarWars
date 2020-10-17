@@ -3,6 +3,13 @@ import React from 'react'
 import '../assets/css/style.css'
 import '../components/Banner'
 import Banner from '../components/Banner'
+import {Button, Card, CardDeck } from 'react-bootstrap';
+import img from '../images/oscar.jpg'
+import img2 from '../images/felps (7).jpeg'
+import InstagramIcon from '@material-ui/icons/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 export default function Home() {
     
@@ -17,23 +24,38 @@ export default function Home() {
                 <h2>Desenvolvedores</h2>
                 <p>Produzido por:</p>
             </div>
-            <div className="furniture_inner row">
-                <div className="col-lg-6">
-                    <div className="furniture_item">
-                        <img className="img-fluid" src={require("../images/oscar.jpg")} alt="Oscar Gross" />
-                        <h4 className="center title-home">Oscar Gross Junior</h4>
-                        <p className="center">1118783<br/>1118783@imed.edu.br</p>
-                    </div>
-                </div>
-                <div className="col-lg-6">
-                    <div className="furniture_item">
-                        <img className="img-fluid img-felps" src={require("../images/felps.jpeg")} alt="Felipe Daniel" />
-                        <h4 className="center title-home">Felipe Daniel</h4>
-                        <p className="center">1118095<br/>1118095@imed.edu.br</p>
-                        <button class=" center btn-insta">insta</button>
-                    </div>
-                </div>
-            </div>
+            <CardDeck>
+                <Card>
+                    <img className="img-home" variant="top" src={img} />
+                    <Card.Body>
+                        <Card.Title className="center">Oscar Gross</Card.Title>
+                        <Card.Text>
+                            <p className="center">1118783<br/>1118783@imed.edu.br</p>
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                        <a target="_blank" rel="#" href="https://www.instagram.com/fedaniel7/"><InstagramIcon className="icon"></InstagramIcon></a>
+                        <a target="_blank" rel="#" href="https://www.facebook.com/felipe.daniel.583671/"><FacebookIcon className="icon"></FacebookIcon></a>
+                        <a target="_blank" rel="#" href="https://www.instagram.com/"><LinkedInIcon className="icon"></LinkedInIcon></a>
+                        <a target="_blank" rel="#" href="https://www.instagram.com/"><TwitterIcon className="icon"></TwitterIcon></a>
+                    </Card.Footer>
+                </Card>
+                <Card>
+                    <img className="img-home" variant="top" src={img2} />
+                    <Card.Body>
+                        <Card.Title className="center">Felipe Daniel</Card.Title>
+                        <Card.Text>
+                            <p className="center">1118095<br/>1118095@imed.edu.br</p>
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                        <a target="_blank" rel="#" href="https://www.instagram.com/fedaniel7/"><InstagramIcon className="icon"></InstagramIcon></a>
+                        <a target="_blank" rel="#" href="https://www.facebook.com/felipe.daniel.583671/"><FacebookIcon className="icon"></FacebookIcon></a>
+                        <a target="_blank" rel="#" href="https://www.instagram.com/"><LinkedInIcon className="icon"></LinkedInIcon></a>
+                        <a target="_blank" rel="#" href="https://twitter.com/_fedaniel"><TwitterIcon className="icon"></TwitterIcon></a>
+                    </Card.Footer>
+                </Card>
+            </CardDeck>
         </div>
     </section>
     
