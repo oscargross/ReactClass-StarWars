@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../assets/css/style.css'
 import '../components/Banner'
 import Banner from '../components/Banner'
-import {Button, Card, CardDeck } from 'react-bootstrap';
+import { Card} from 'react-bootstrap';
 const axios = require('axios');
 
 export default function People() {
@@ -26,12 +26,14 @@ export default function People() {
                     </div>
                     <div className="furniture_inner row">
                         {people.map((item, key) =>
-                            <Card className="card-starships--margin" style={{ width: '18rem' }}>
+                            <Card key={key} className="card-starships--margin" style={{ width: '18rem' }}>
                                 <Card.Body>
-                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Title className="center">{item.name}</Card.Title>
                                     <Card.Text>
-                                        Some quick example text to build on the card title and make up the bulk of
-                                        the card's content.
+                                        <p className="center">Altura: {item.height}</p>
+                                        <p className="center">Peso: {item.mass}</p>
+                                        <p className="center">Gênero: {item.gender}</p>
+                                        <p className="center">Cor do Cabelo: {item.hair_color}</p>
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
