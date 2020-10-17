@@ -1,9 +1,8 @@
 import React from 'react'
-//import { Link } from 'react-router-dom'
 import '../assets/css/style.css'
 import '../components/Banner'
 import Banner from '../components/Banner'
-import {Button, Card, CardDeck } from 'react-bootstrap';
+import {Card, CardDeck } from 'react-bootstrap';
 import img from '../images/oscar.jpg'
 import img2 from '../images/felps (7).jpeg'
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -26,7 +25,7 @@ export default function Home() {
             </div>
             <CardDeck>
                 <Card>
-                    <img className="img-home" variant="top" src={img} />
+                    <img className="img-home" variant="top" alt="" src={img} />
                     <Card.Body>
                         <Card.Title className="center">Oscar Gross</Card.Title>
                         <Card.Text>
@@ -34,14 +33,14 @@ export default function Home() {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <a target="_blank" rel="#" href="https://www.instagram.com/fedaniel7/"><InstagramIcon className="icon"></InstagramIcon></a>
-                        <a target="_blank" rel="#" href="https://www.facebook.com/felipe.daniel.583671/"><FacebookIcon className="icon"></FacebookIcon></a>
-                        <a target="_blank" rel="#" href="https://www.instagram.com/"><LinkedInIcon className="icon"></LinkedInIcon></a>
-                        <a target="_blank" rel="#" href="https://www.instagram.com/"><TwitterIcon className="icon"></TwitterIcon></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/fedaniel7/"><InstagramIcon className="icon"></InstagramIcon></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/felipe.daniel.583671/"><FacebookIcon className="icon"></FacebookIcon></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/"><LinkedInIcon className="icon"></LinkedInIcon></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/"><TwitterIcon className="icon"></TwitterIcon></a>
                     </Card.Footer>
                 </Card>
                 <Card>
-                    <img className="img-home" variant="top" src={img2} />
+                    <img className="img-home" variant="top" alt="" src={img2} />
                     <Card.Body>
                         <Card.Title className="center">Felipe Daniel</Card.Title>
                         <Card.Text>
@@ -49,10 +48,10 @@ export default function Home() {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <a target="_blank" rel="#" href="https://www.instagram.com/fedaniel7/"><InstagramIcon className="icon"></InstagramIcon></a>
-                        <a target="_blank" rel="#" href="https://www.facebook.com/felipe.daniel.583671/"><FacebookIcon className="icon"></FacebookIcon></a>
-                        <a target="_blank" rel="#" href="https://www.instagram.com/"><LinkedInIcon className="icon"></LinkedInIcon></a>
-                        <a target="_blank" rel="#" href="https://twitter.com/_fedaniel"><TwitterIcon className="icon"></TwitterIcon></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/fedaniel7/"><InstagramIcon className="icon"></InstagramIcon></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/felipe.daniel.583671/"><FacebookIcon className="icon"></FacebookIcon></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/"><LinkedInIcon className="icon"></LinkedInIcon></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/_fedaniel"><TwitterIcon className="icon"></TwitterIcon></a>
                     </Card.Footer>
                 </Card>
             </CardDeck>

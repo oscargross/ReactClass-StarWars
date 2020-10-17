@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../assets/css/style.css'
 import '../components/Banner'
 import Banner from '../components/Banner'
-import {Button, Card, CardDeck } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 const axios = require('axios');
 
 export default function Planets() {
@@ -26,12 +26,14 @@ export default function Planets() {
                     </div>
                     <div className="furniture_inner row">
                         {planet.map((item, key) =>
-                            <Card className="card-starships--margin" style={{ width: '18rem' }}>
+                            <Card key={key} className="card-starships--margin" style={{ width: '18rem' }}>
                                 <Card.Body>
-                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Title className="center">{item.name}</Card.Title>
                                     <Card.Text>
-                                        Some quick example text to build on the card title and make up the bulk of
-                                        the card's content.
+                                        <p className="center">Periodo Rotacional: {item.rotation_period}</p>
+                                        <p className="center">Diâmetro: {item.diameter}</p>
+                                        <p className="center">Gravidade: {item.gravity}</p>
+                                        <p className="center">População: {item.population}</p>
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
