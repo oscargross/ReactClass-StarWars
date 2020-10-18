@@ -1,41 +1,28 @@
 import React from 'react'
-//import { Link } from 'react-router-dom'
 import '../assets/css/style.css'
 import '../components/Banner'
 import Banner from '../components/Banner'
+import { Button, Form, Card } from 'react-bootstrap'
 
 export default function Login() {
-
-
     return (
         <>
-        <Banner titulo={"Login" } mensagem="Eu sou seu Pai!"/>
-                            
-            <section className="furniture_area p_120">
-                <div className="container">
-                    <div className="main_title">
-                        <h2>Desenvolvedores</h2>
-                        <p>Produzido por:</p>
-                    </div>
-                    <div className="furniture_inner row">
-                        <div className="col-lg-6">
-                            <div className="furniture_item">
-                                <img className="img-fluid" src={require("../images/oscar.jpg")} alt="" />
-                                <h4 className="center">Oscar Gross Junior</h4>
-                                <p className="center">1118783<br/>1118783@imed.edu.br</p>
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="furniture_item">
-                                <img className="img-fluid" src={require("../images/felps.jpeg")} alt="" />
-                                <h4 className="center">Felipe Daniel</h4>
-                                <p className="center">1118095<br/>1118095@imed.edu.br</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Banner titulo={"Login"} mensagem="Eu sou seu Pai!" />
+            <Card className="card-starships--margin" style={{ width: '35%', margin: '40px 35%', padding: '10px' }}>
+                <Form>
+                    <Form.Group controlId="formBasicEmail">
+                        <Form.Label>E-mail:</Form.Label>
+                        <Form.Control type="email" placeholder="joao@gmail.com" />
+                    </Form.Group>
 
+                    <Form.Group controlId="formBasicPassword">
+                        <Form.Label>Senha</Form.Label>
+                        <Form.Control type="password" placeholder="suasenha" />
+                    </Form.Group>
+
+                    <Button variant="primary" type="submit">Entrar</Button>
+                </Form>
+            </Card>
         </>
     )
 }

@@ -2,13 +2,8 @@ import React, { useEffect, useState } from 'react'
 import '../assets/css/style.css'
 import '../components/Banner'
 import Banner from '../components/Banner'
-import { Button, Card, CardDeck } from 'react-bootstrap';
-import film1 from '../images/star wars 1.jpg'
-import film2 from '../images/star wars2.jpg'
-import film3 from '../images/star wars 3.jpg'
-import film4 from '../images/star wars 4.jpg'
-import film5 from '../images/star wars 5.jpg'
-import film6 from '../images/star wars 6.jpg'
+import { Button, Card } from 'react-bootstrap';
+import linksFilms from '../content/PropsFilms'
 const axios = require('axios');
 
 export default function Films() {
@@ -22,15 +17,6 @@ export default function Films() {
             })
     }, [])
 
-    const linksFilms = [
-        { id: 1, name: 'A New Hope', img: film1, trailer: 'https://www.youtube.com/watch?v=1g3_CFmnU7k' },
-        { id: 2, name: 'The Empire Strikes Back', img: film2, trailer: 'https://www.youtube.com/watch?v=JNwNXF9Y6kY' },
-        { id: 3, name: 'Return of the Jedi', img: film3, trailer: 'https://www.youtube.com/watch?v=7L8p7_SLzvU' },
-        { id: 4, name: 'The Phantom Menace', img: film4, trailer: 'https://www.youtube.com/watch?v=bD7bpG-zDJQ' },
-        { id: 5, name: 'Attack of the Clones', img: film5, trailer: 'https://www.youtube.com/watch?v=gYbW1F_c9eM' },
-        { id: 6, name: 'Revenge of the Sith', img: film6, trailer: 'https://www.youtube.com/watch?v=5UnjrG_N8hU' }
-    ]
-
     function ExternalProp(tag) {
         let internalParamImg;
         let internalParamTrailer;
@@ -40,9 +26,8 @@ export default function Films() {
                 internalParamTrailer = prop.trailer
             }
         })
-        const renderTag = tag.img ? <img className="img-films" variant="top" alt ="" src={internalParamImg} />
+        const renderTag = tag.img ? <img className="img-films" variant="top" alt="" src={internalParamImg} />
             : <a target="_blank" rel="noopener noreferrer" href={internalParamTrailer} target="_blank"><Button variant="outline-danger">Trailer Youtube</Button></a>
-
         return renderTag
     }
 
@@ -52,9 +37,9 @@ export default function Films() {
 
             <section className="furniture_area p_120">
                 <div className="container">
-                    <CardDeck>
+                    <div className="furniture_inner row">
                         {film.map((item, key) =>
-                            <Card key={key}>
+                            <Card key={key} className="card-starships--margin" style={{ width: '18rem', height: '100%' }} >
                                 <ExternalProp img={true} nameToCompare={item.title} />
                                 <Card.Body>
                                     <Card.Title className="center">{item.title}</Card.Title>
@@ -70,7 +55,7 @@ export default function Films() {
                                 </Card.Footer>
                             </Card>
                         )}
-                    </CardDeck>
+                    </div>
                 </div>
             </section>
         </>
