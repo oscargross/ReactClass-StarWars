@@ -14,12 +14,10 @@ export default function Login() {
                         <Form.Label>E-mail:</Form.Label>
                         <Form.Control type="email" placeholder="joao@gmail.com" />
                     </Form.Group>
-
                     <Form.Group controlId="formBasicPassword">
                         <Form.Label>Senha</Form.Label>
                         <Form.Control type="password" placeholder="suasenha" />
                     </Form.Group>
-
                     <Button variant="primary" type="submit">Entrar</Button>
                 </Form>
             </Card>
